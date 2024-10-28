@@ -5,6 +5,7 @@ The Debits component contains information for Debits page view.
 Note: You need to work on this file for the Assignment.
 ==================================================*/
 import {Link} from 'react-router-dom';
+import React, {Component} from 'react';
 
 const Debits = (props) => {
   // Create the list of Debit items

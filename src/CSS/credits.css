@@ -1,0 +1,83 @@
+/* main container */
+.credits {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+/* Header */
+.credits h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #3498db; /*I think this is roughly Venmo blue*/
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* credits */
+.credits li {
+    font-size: 1.2rem;
+    color: #34495e;
+    margin: 8px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #ffffff;
+    list-style-type: none;
+}
+
+/* Form */
+.credits form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Input */
+.credits input[type="text"],
+.credits input[type="number"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* Submit */
+.credits button[type="submit"] {
+    padding: 10px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.credits button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Link */
+.credits a {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #3498db;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.credits a:hover {
+    color: #2980b9;
+}

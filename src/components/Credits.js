@@ -6,6 +6,7 @@ Note: You need to work on this file for the Assignment.
 ==================================================*/
 import {Link} from 'react-router-dom';
 import React, { useState } from 'react';
+import '../CSS/credits.css' //my stylings for the page
 
 const Credits = (props) => {
   const [description, setDescription] = useState(''); //init my state strings
@@ -33,7 +34,7 @@ const Credits = (props) => {
   };
 
   return (
-    <div>
+    <div className = 'credits'> {/*css container*/}
       <h1>Credits</h1>
 
       {creditsView()}

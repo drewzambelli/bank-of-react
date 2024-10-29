@@ -6,6 +6,7 @@ Note: You need to work on this file for the Assignment.
 ==================================================*/
 import {Link} from 'react-router-dom';
 import React, { useState } from 'react';
+import '../CSS/debits.css' //my stylings for the page
 
 const Debits = (props) => {
   const [description, setDescription] = useState('');
@@ -33,7 +34,7 @@ const Debits = (props) => {
 
   // Render the list of Debit items and a form to input new Debit item
   return (
-    <div>
+    <div className = 'debits'> {/*css container*/}
       <h1>Debits</h1>
 
       {debitsView()}

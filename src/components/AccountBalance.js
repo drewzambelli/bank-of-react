@@ -10,7 +10,7 @@ class AccountBalance extends Component {
   render() {
     return (
       <div>
-        <strong>Balance: $ {this.props.accountBalance}</strong>
+        <strong>Balance: $ {this.props.accountBalance.toFixed(2)}</strong>
       </div>
     );
   }

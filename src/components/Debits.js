@@ -32,6 +32,19 @@ const Debits = (props) => {
     setAmount('');
   };
 
+  // Having a problem using toFixed so i needed to write
+  //this function to stop user entering more than 2 decimal places
+  const handleDecimals = (e) => {
+    const value = e.target.value;
+    // only allow at most 2 decimal places
+    const testValue = /^\d*\.?\d{0,2}$/;
+
+    // Validate and set amount if valid
+    if (testValue.test(value) || value === '') {
+      setAmount(value);
+    }
+  };
+
   // Render the list of Debit items and a form to input new Debit item
   return (
     <div className = 'debits'> {/*css container*/}
@@ -52,7 +65,7 @@ const Debits = (props) => {
         type="number" 
         name="amount" 
         value = {amount}
-        onChange={(e) => setAmount(e.target.value)} //this is my listener for user action
+        onChange = {handleDecimals} //{(e) => setAmount(e.target.value)} //this is my listener for user action
         placeholder="Amount"
         required/>
 
